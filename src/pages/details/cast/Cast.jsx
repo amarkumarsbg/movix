@@ -26,7 +26,7 @@ const Cast = ({ data, loading }) => {
           <div className="listItems">
             {data &&
               Array.isArray(data) &&
-              data.map((item) => {
+              data?.map((item) => {
                 let imgUrl = item.profile_path
                   ? url.profile + item.profile_path
                   : avatar;
